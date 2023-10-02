@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loacator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="main-wrap">
+        <aside class="aside">
+            <form class="form">
+                <div class="form__group">
+                    <input type="text" class="form__control" placeholder="Torrance CA 90503" />
+                    <button type="button" class="btn btn--outline form__btn-search">Search</button>
+                </div>
+                <div class="form__group">
+                    <div class="form__control-wrap">
+                        <select class="form__control form__control--has-icon">
+                            <option>United States of America</option>
+                        </select>  
+                        <img src="img/chevron_down.png" class="form__icon"> 
+                    </div>
+                    <button type="button" class="btn btn--outline form__btn-filter js--btn-filter"><img src="img/icon-filter.svg" class="btn__icon"/></button>
+                </div>
+            </form>
+            <div class="aside__filters js--filters">
+                <div class="aside__header aside__header--text-left"><p>Filters</p></div>
+                <ul class="aside__filter">
+                    <li class="aside__filter-item"><a href=""><img src="img/icon-retail.svg" class="aside__filter-icon" />Retail</a></li>
+                    <li class="aside__filter-item"><a href=""><img src="img/icon-outlet.svg" class="aside__filter-icon" />Outlet</a></li>
+                    <li class="aside__filter-item"><a href=""><img src="img/icon-factory.svg" class="aside__filter-icon" />Factory</a></li>
+                    <li class="aside__filter-item"><a href=""><img src="img/icon-promotion.svg" class="aside__filter-icon" />Promotion</a></li>
+                </ul>
+                <button type="button" class="btn aside__filter-btn-close js--btn-close-filter">Close filters</button>
+            </div>
+            <div class="aside__mobile-view-togglers">
+                <button class="aside__mobile-view-toggler active js--mobile-list-toggle">List View</button>
+                <button class="aside__mobile-view-toggler js--mobile-map-toggle">Map View</button>
+            </div>
+            <div class="aside__mobile-view-map js--mobile-map">
+                <img src="img/map.png" class="map"/>
+            </div>
+            <div class="aside__locations-wrap js--locations">
+                <div class="aside__header"><p>There are 10 locations near you</p></div>
+                <div class="aside__locations">
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>1</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">3433 sepulveda blvd torrance, ca 90505</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>2</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">1601 Kingsdalw ave Redondo beach, ca 90278</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>3</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">22255 S Western ave torrance, ca 90501</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>4</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">3433 sepulveda blvd torrance, ca 90505</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>5</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">1601 Kingsdalw ave Redondo beach, ca 90278</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>6</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">22255 S Western ave torrance, ca 90501</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>7</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">3433 sepulveda blvd torrance, ca 90505</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>8</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">1601 Kingsdalw ave Redondo beach, ca 90278</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>9</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">22255 S Western ave torrance, ca 90501</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+    
+                    <div class="aside__location">
+                        <div class="aside__location-office-hours">
+                            <div class="aside__location-order">
+                                <img src="img/map_pin_regular.png" />
+                                <span>10</span>
+                            </div>
+                            <p class="aside__location-office-hours-time">Open until <strong>10pm</strong></p>
+                        </div>
+                        <div class="aside__location-info">
+                            <div class="aside__location-info-row">
+                                <div>
+                                    <p class="aside__location-info-shop">The Shop</p>
+                                    <address class="aside__location-info-address">3433 sepulveda blvd torrance, ca 90505</address>
+                                    <p class="aside__location-info-tel"><img src="img/phone_icon.png" /> (214)826-0331</p>
+                                </div>
+                                <a href=""><img src="img/chevron_right.png" /></a>
+                            </div>
+                            <a href="" class="btn">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <img src="img/map.png" class="map"/>
+        </main>
+    </div>
+    
+</body>
+</html>
